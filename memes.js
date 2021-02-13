@@ -1,6 +1,8 @@
 let memes;
 let memetitle;
 
+document.querySelector(".btn-danger").addEventListener('click' ,memeIt)
+
 function memeIt(memes) {
 	$.getJSON('https://meme-api.herokuapp.com/gimme/PampamilyangPaoLUL')
 	.then(randMeme => {
